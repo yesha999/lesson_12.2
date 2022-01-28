@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson_12</title>
+</head>
+<body>
+<main>
+    <h1>Найдено кандидатов {{ canidates_count }}</h2>
+        {% for candidate in candidates_search %}
+    <p><a href="/candidate/{{candidate['id']}}">{{candidate['name']}}</a></p>
+    {% endfor %}
+</main>
+</body>
+</html>

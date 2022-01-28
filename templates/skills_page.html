@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson_12</title>
+</head>
+<body>
+<main>
+    <h1> Найдено со скиллом {{skill}}: {{candidates_w_skill_count}} </h1>
+        {% for candidate in candidates_w_skill %}
+        <p><a href="/candidate/{{candidate['id']}}">{{candidate['name']}}</a></p>
+        {% endfor %}
+
+</main>
+</body>
+</html>
